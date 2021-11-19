@@ -36,6 +36,7 @@ public final class Driver {
                 throw new RuntimeException("MalformedURLException happened");
             }
             DriverManager.getDriver().get(PropertyUtils.get(ConfigProperties.URL));
+            DriverManager.getDriver().manage().window().maximize();
             System.out.println("Browser launched");
             System.out.println(DriverManager.getDriver().getTitle());
         }

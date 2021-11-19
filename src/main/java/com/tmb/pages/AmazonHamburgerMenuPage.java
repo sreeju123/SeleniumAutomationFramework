@@ -16,7 +16,7 @@ public class AmazonHamburgerMenuPage extends BasePage{
 
     public AmazonHamburgerMenuPage clickComputer() {
         click(By.xpath(linkComputers), WaitStrategy.CLICKABLE, "Mobiles and Computers");
-        System.out.println("CLicked Computer");
+        System.out.println("CLicked Computer"); 
         return this;
     }
 

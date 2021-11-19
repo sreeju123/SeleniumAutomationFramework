@@ -4,7 +4,6 @@ import com.tmb.annotations.FrameworkAnnotation;
 import com.tmb.enums.CategoryType;
 import com.tmb.pages.AmazonHamburgerMenuPage;
 import com.tmb.pages.AmazonHomePage;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.Map;
@@ -21,7 +20,7 @@ public final class AmazonDemoTest extends BaseTest{
         AmazonHomePage amazonHomePage=new AmazonHomePage();
         AmazonHamburgerMenuPage amazonHamburgerMenuPage=new AmazonHamburgerMenuPage();
         amazonHomePage.clickHamburger();
-        amazonHomePage.clickHamburger();
+//        amazonHomePage.clickHamburger();
         amazonHamburgerMenuPage.clickComputer();
         amazonHamburgerMenuPage.clickOnSubMenuItem(data.get("menutext"));
 

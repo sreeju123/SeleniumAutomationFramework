@@ -19,7 +19,7 @@ public class AmazonHomePage extends BasePage{
     }
 
     public AmazonHamburgerMenuPage clickHamburger() {
-//        Uninterruptibles.sleepUninterruptibly(4,TimeUnit.SECONDS);
+        Uninterruptibles.sleepUninterruptibly(4,TimeUnit.SECONDS);
         linkHamburger.click();
         System.out.println("CLicked Hamburger menu");
         return new AmazonHamburgerMenuPage();

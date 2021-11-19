@@ -1,7 +1,6 @@
 package com.tmb.pages;
 
 import com.tmb.constants.FrameworkConstants;
-import com.tmb.driver.Driver;
 import com.tmb.driver.DriverManager;
 import com.tmb.enums.WaitStrategy;
 import org.openqa.selenium.By;

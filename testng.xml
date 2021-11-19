@@ -6,10 +6,10 @@
         <listener class-name="com.tmb.listeners.MethodInterceptor"/>
         <listener class-name="com.tmb.listeners.AnnotationTransformer"/>
     </listeners>
-    <test thread-count="2" parallel="methods" verbose="2" preserve-order="true" name="AmazonDemoTest">
+    <test thread-count="2" parallel="methods" verbose="2" preserve-order="true" name="Test">
         <classes>
-<!--            <class name="com.tmb.tests.OrangeHRMTests"/>-->
-            <class name="com.tmb.tests.AmazonDemoTest"/>
+            <class name="com.tmb.tests.OrangeHRMTests"/>
+<!--            <class name="com.tmb.tests.AmazonDemoTest"/>-->
         </classes>
     </test>
 </suite>

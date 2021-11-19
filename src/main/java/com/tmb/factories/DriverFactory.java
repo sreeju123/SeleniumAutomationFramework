@@ -31,8 +31,8 @@ public final class DriverFactory {
             if (runMode.equalsIgnoreCase("remote")) {
                 DesiredCapabilities cap = DesiredCapabilities.chrome();
                 ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--no-sandbox");
-                cap.setCapability(ChromeOptions.CAPABILITY,chromeOptions);
+//                chromeOptions.addArguments("--no-sandbox");
+                cap.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
                 driver = new RemoteWebDriver(new URL(PropertyUtils.get(ConfigProperties.SELENIUMGRIDURL)), cap);
 
 

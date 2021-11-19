@@ -14,11 +14,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.concurrent.TimeUnit;
 
 public class OrangeHRMHomePage extends BasePage {
-    private final By linkWelcome = By.id("welcome");
+    private final By linkWelcome = By.xpath("//*[@id='welcome']");
     private final By linkLogout = By.xpath("//a[text()='Logout']");
 
     public OrangeHRMHomePage clickWelcome() {
-        click(linkWelcome, WaitStrategy.PRESENCE, "Welcome");
+        click(linkWelcome, WaitStrategy.CLICKABLE, "Welcome");
         ExtentLogger.pass("Welcome Link clicked");
         return this;
     }
