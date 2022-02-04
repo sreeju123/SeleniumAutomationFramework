@@ -3,6 +3,7 @@ package com.tmb.tests;
 import com.tmb.annotations.FrameworkAnnotation;
 import com.tmb.enums.CategoryType;
 import com.tmb.pages.OrangeHRMLoginPage;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.Map;
@@ -16,23 +17,19 @@ public final class OrangeHRMTests extends BaseTest {
     @Test
     public void loginLogoutTest(Map<String, String> data) throws Exception {
         OrangeHRMLoginPage orangeHRMLoginPage = new OrangeHRMLoginPage();
-        orangeHRMLoginPage.enterUsername(data.get("username")).enterPassword(data.get("password")).clickLogin();
-//                .clickWelcome().clickLogout().getTitle();
-//        Assert.assertEquals("OrangeHRM", title);
+        String title = orangeHRMLoginPage.enterUsername(data.get("username")).enterPassword(data.get("password")).clickLogin().clickWelcome().clickLogout().getTitle();
+        Assert.assertEquals("OrangeHRM", title);
 
-//        orangeHRMHomePage.clickWelcome().clickLogout();
+
     }
 
     @FrameworkAnnotation(author = {"Sreejith"}, category = {CategoryType.SMOKE, CategoryType.REGRESSION})
     @Test
     public void newTest(Map<String, String> data) throws Exception {
         OrangeHRMLoginPage orangeHRMLoginPage = new OrangeHRMLoginPage();
-        orangeHRMLoginPage.enterUsername(data.get("username")).enterPassword(data.get("password")).clickLogin();
-//                .clickWelcome().clickLogout().getTitle();
-//        throw new SkipException("Skipped Exception");
-//        Assert.assertEquals("OrangeHRM", title);
+        String title = orangeHRMLoginPage.enterUsername(data.get("username")).enterPassword(data.get("password")).clickLogin().clickWelcome().clickLogout().getTitle();
+        Assert.assertEquals("OrangeHRM", title);
 
-//        orangeHRMHomePage.clickWelcome().clickLogout();
     }
 
 
