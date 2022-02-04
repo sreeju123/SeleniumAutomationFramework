@@ -26,7 +26,6 @@ public class OrangeHRMHomePage extends BasePage {
     public OrangeHRMLoginPage clickLogout() {
 
 //        From Commons lang3
-
         Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
 
 //        WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), 60);

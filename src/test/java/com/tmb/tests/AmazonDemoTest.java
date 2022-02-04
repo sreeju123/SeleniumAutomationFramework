@@ -20,7 +20,6 @@ public final class AmazonDemoTest extends BaseTest{
         AmazonHomePage amazonHomePage=new AmazonHomePage();
         AmazonHamburgerMenuPage amazonHamburgerMenuPage=new AmazonHamburgerMenuPage();
         amazonHomePage.clickHamburger();
-//        amazonHomePage.clickHamburger();
         amazonHamburgerMenuPage.clickComputer();
         amazonHamburgerMenuPage.clickOnSubMenuItem(data.get("menutext"));
 

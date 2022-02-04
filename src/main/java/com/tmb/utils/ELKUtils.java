@@ -4,7 +4,6 @@ import com.tmb.enums.ConfigProperties;
 import io.restassured.response.Response;
 import org.testng.Assert;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
@@ -28,7 +27,7 @@ public class ELKUtils {
             Map<String, String> map = new HashMap<>();
             map.put("testName", testName);
             map.put("status", status);
-//            map.put("executionTime", LocalDateTime.now().toString());
+            map.put("executionTime", LocalDateTime.now().toString());
 
             Response response = given().header("Content-Type", "application/json")
                     .log().all().
