@@ -61,11 +61,11 @@ public final class ExtentReport {
             extent.flush();
         }
         ExtentManager.unload();
-        try {
-            Desktop.getDesktop().browse(new File(FrameworkConstants.getEXTENTREPORTPATH()).toURI());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Desktop.getDesktop().browse(new File(FrameworkConstants.getEXTENTREPORTPATH()).toURI());
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
     /**
