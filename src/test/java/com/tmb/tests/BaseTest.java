@@ -1,14 +1,9 @@
 package com.tmb.tests;
 
 import com.tmb.driver.Driver;
-import com.tmb.reports.ExtentReport;
-import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 
-import java.lang.reflect.Method;
-import java.net.MalformedURLException;
 import java.util.Map;
 
 public class BaseTest {

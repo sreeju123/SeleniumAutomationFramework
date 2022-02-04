@@ -1,17 +1,12 @@
 package com.tmb.listeners;
 
-import java.util.Arrays;
-
-import org.testng.ISuite;
-import org.testng.ISuiteListener;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
-
 import com.tmb.annotations.FrameworkAnnotation;
 import com.tmb.reports.ExtentLogger;
 import com.tmb.reports.ExtentReport;
 import com.tmb.utils.ELKUtils;
+import org.testng.*;
+
+import java.util.Arrays;
 
 /**
  * Implements {@link org.testng.ITestListener} and {@link org.testng.ISuiteListener} to leverage the abstract methods

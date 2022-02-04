@@ -1,6 +1,5 @@
 package com.tmb.tests;
 
-import com.tmb.driver.Driver;
 import com.tmb.driver.DriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

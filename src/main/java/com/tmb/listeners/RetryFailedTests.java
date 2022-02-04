@@ -2,7 +2,6 @@ package com.tmb.listeners;
 
 import com.tmb.enums.ConfigProperties;
 import com.tmb.utils.PropertyUtils;
-
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 

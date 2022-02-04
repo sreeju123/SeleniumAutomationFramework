@@ -3,17 +3,8 @@ package com.tmb.driver;
 import com.tmb.enums.ConfigProperties;
 import com.tmb.factories.DriverFactory;
 import com.tmb.utils.PropertyUtils;
-import com.tmb.constants.FrameworkConstants;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.BrowserType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Objects;
 
 public final class Driver {

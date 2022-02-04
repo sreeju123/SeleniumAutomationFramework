@@ -1,6 +1,5 @@
 package com.tmb.factories;
 
-import com.tmb.driver.DriverManager;
 import com.tmb.enums.ConfigProperties;
 import com.tmb.utils.PropertyUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;

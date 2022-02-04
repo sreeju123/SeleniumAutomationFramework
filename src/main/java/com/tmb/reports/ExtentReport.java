@@ -1,15 +1,12 @@
 package com.tmb.reports;
 
-import java.awt.Desktop;
-import java.io.File;
-import java.io.IOException;
-import java.util.Objects;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.tmb.constants.FrameworkConstants;
 import com.tmb.enums.CategoryType;
+
+import java.util.Objects;
 
 /**
  * Perform initialisation and termination of {@link com.aventstack.extentreports.ExtentReports}
@@ -60,12 +57,12 @@ public final class ExtentReport {
         if(Objects.nonNull(extent)) {
             extent.flush();
         }
-        ExtentManager.unload();
-        try {
-            Desktop.getDesktop().browse(new File(FrameworkConstants.getEXTENTREPORTPATH()).toURI());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        ExtentManager.unload();
+//        try {
+//            Desktop.getDesktop().browse(new File(FrameworkConstants.getEXTENTREPORTPATH()).toURI());
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
     /**

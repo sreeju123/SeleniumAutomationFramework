@@ -1,15 +1,9 @@
 package com.tmb.pages;
 
-import com.aventstack.extentreports.util.Assert;
 import com.google.common.util.concurrent.Uninterruptibles;
-import com.tmb.driver.DriverManager;
 import com.tmb.enums.WaitStrategy;
 import com.tmb.reports.ExtentLogger;
-import com.tmb.reports.ExtentManager;
-import com.tmb.reports.ExtentReport;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
