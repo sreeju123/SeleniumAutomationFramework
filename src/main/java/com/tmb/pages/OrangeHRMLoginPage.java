@@ -7,9 +7,9 @@ import org.openqa.selenium.By;
 public final class OrangeHRMLoginPage extends BasePage {
 
 
-    private final By textboxUsername = By.id("txtUsername");
-    private final By textboxPassword = By.xpath("//input[@id='txtPassword' and @type='password']");
-    private final By buttonLogin = By.id("btnLogin");
+    private final By textboxUsername = By.name("username");
+    private final By textboxPassword = By.name("password");
+    private final By buttonLogin = By.xpath("//button[contains(@class,'orangehrm-login-button')]");
 
     public OrangeHRMLoginPage enterUsername(String username) throws Exception {
         sendKeys(textboxUsername,username);

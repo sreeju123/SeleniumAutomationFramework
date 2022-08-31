@@ -8,11 +8,11 @@ import org.openqa.selenium.By;
 import java.util.concurrent.TimeUnit;
 
 public class OrangeHRMHomePage extends BasePage {
-    private final By linkWelcome = By.xpath("//*[@id='welcome']");
+    private final By linkUserProfile = By.xpath("//p[@class='oxd-userdropdown-name']");
     private final By linkLogout = By.xpath("//a[text()='Logout']");
 
     public OrangeHRMHomePage clickWelcome() {
-        click(linkWelcome, WaitStrategy.CLICKABLE, "Welcome");
+        click(linkUserProfile, WaitStrategy.CLICKABLE, "Welcome");
         ExtentLogger.pass("Welcome Link clicked");
         return this;
     }

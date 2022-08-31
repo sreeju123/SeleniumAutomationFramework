@@ -35,3 +35,20 @@ services:
     environment:
       - HUB_HOST=selenium-hub
       - HUB_PORT=4444
+  elasticsearch:
+    image: elasticsearch:7.12.1
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+  kibana:
+    image: kibana:7.12.1
+    container_name: kibana
+    depends_on:
+      - elasticsearch
+    links:
+      - elasticsearch:elasticsearch
+    ports:
+      - "5601:5601"
